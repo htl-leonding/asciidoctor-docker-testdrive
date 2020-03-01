@@ -85,3 +85,28 @@ ifndef::backend[:backend: html5]
 === The Generated Output
 
 image:doc-folder-output.png[]
+
+== How to change the repository
+
+* Rename folder of project
+* Rename Project
+* Project Structur - Project - Rename Project
+* change git remote
+
+----
+git remote -v
+----
+
+----
+git remote set-url origin <new repo link>
+----
+
+ie
+
+----
+git remote set-url origin https://github.com/htl-leonding/asciidoctor-docker-testdrive.git
+----
+
+In case you change your remote repository to https URL, you will be prompted for your username and password next time you use git fetch, git pull or git push.
+
+source: https://www.xenovation.com/blog/source-control-management/git/how-to-change-remote-git-repository[How to change remote git repository]
